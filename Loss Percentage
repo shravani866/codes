@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+    double cp,sp,lossPercent;
+    scanf("%lf %lf",&cp,&sp);
+    lossPercent=((cp-sp)/cp)*100.0;
+    printf("%.2f",lossPercent);
+    return 0;
+}
