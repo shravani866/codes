@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+// Constrained code starts here
+int x,y,z,r;
+scanf("%d%d%d",&x,&y,&z);
+
+if(y>z)
+{
+r=0;
+}
+else{
+r=(z-y)/x;
+}
+printf("%d",r);
+return 0;
+}
