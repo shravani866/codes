@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main() {
+float salary, hra, da, pf, gross_salary;
+scanf("%f",&salary);
+scanf("%f",&hra);
+scanf("%f",&da);
+pf=0.12*salary;
+gross_salary=salary+hra+da+pf;
+printf("%.2f
+%.2f",pf,gross_salary);
+return 0;
+}
