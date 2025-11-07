@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main() {
+    int x,y;
+    scanf("%d",&x);
+    scanf("%d",&y);
+    int height;
+    if(x>y)
+        height=x;
+    else
+        height=y;
+    printf(" %d
+",height);
+    return 0;
+}
