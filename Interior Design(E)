@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int X1, Y1, X2, Y2;
+    scanf("%d %d %d %d", &X1, &Y1, &X2, &Y2);
+    int style1=X1+Y1;
+    int style2=X2+Y2;
+    if(style1<style2){
+        printf("%d
+",style1);
+    }else{
+        printf("%d
+",style2);
+    }
+    return 0;
+}
