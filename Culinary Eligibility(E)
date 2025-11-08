@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d %d",&x,&y);
+    double attendance=(y*100.00)/x;
+    if(attendance>=75.0)
+    printf("ELIGIBLE
+    ");
+    else
+    printf("NOT ELIGIBLE
+    ");
+    return 0;
+}
