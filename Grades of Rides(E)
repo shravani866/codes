@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int hurl,spin,speed;
+    scanf("%d %d %d",&hurl,&spin,&speed);
+    int h=hurl>50;
+    int s=spin>60;
+    int v=speed>100;
+    if(h && s && v)
+        printf("10
+");
+    else if(h && s)
+        printf("9
+");
+    else if(s && v)
+        printf("8
+");
+    else if(h && v)
+        printf("7
+");
+    else if(h||s)
+        printf("6
+");
+    else
+Printf("5");
+Return 0;
+}
