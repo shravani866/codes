@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int N,M;
+    scanf("%d %d", &N,&M);
+    double onlinePrice=N*0.9;
+    if(onlinePrice<M) {
+        printf("ONLINE
+");
+    }else if(onlinePrice>M) {
+        printf("DINING
+");
+    }else {
+        printf("EITHER
+");
+    }
+    return 0;
+}
