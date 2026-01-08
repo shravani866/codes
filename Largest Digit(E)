@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+int N;
+scanf("%d",&N);
+int maxDigit=0;
+while(N>0) {
+int digit=N%10;
+if(digit>maxDigit) {
+maxDigit=digit;
+}
+N/=10;
+}
+printf("%d
+",maxDigit);
+return 0;
+}
