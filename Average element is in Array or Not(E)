@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main() {
+int N, sum=0, avg, found=0;
+scanf("%d",&N);
+int arr;
+for(int i=0;i<N;i++) {
+scanf("%d",&arr[i]);
+sum+=arr[i];
+}
+avg=sum/N;
+for(int i=0;i<N;i++) {
+if(arr[i]==avg) {
+found=1;
+break;
+}
+}
+if(found)
+printf("True");
+else
+printf("False");
+return 0;
+}
