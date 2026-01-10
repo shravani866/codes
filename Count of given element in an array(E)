@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main() {
+int N,Z, count=0;
+scanf("%d",&N);
+int arr;
+for(int i=0 ;i<N;i++) {
+scanf("%d", &arr[i]);
+}
+scanf("%d",&Z);
+for(int i=0;i<N;i++) {
+if(arr[i]==Z)
+count++;
+}
+printf("%d", count);
+return 0;
+}
