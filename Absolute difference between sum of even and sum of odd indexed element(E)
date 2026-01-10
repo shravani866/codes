@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main() {
+int N;
+scanf("%d",&N);
+int arr;
+for(int i=0 ;i<N;i++) {
+scanf("%d",&arr[i]);
+}
+int sumEvenIndex=0, sumoddIndex=0;
+for(int i=0 ;i<N;i++) {
+if(i%2==0) {
+sumEvenIndex+=arr[i];
+}else {
+sumoddIndex+=arr[i];
+}
+}
+int diff=abs (sumEvenIndex-sumoddIndex);
+printf("%d", diff);
+return 0;
+}
