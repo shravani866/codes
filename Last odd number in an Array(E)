@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main() {
+int N;
+scanf("%d",&N);
+int arr;
+for(int i=0;i<N;i++) {
+scanf("%d",&arr[i]);
+}
+int lastodd=-1;
+for(int i=0;i<N;i++) {
+if(arr[i]%2!=0) {
+lastodd=arr[i];
+}
+}
+printf("%d", lastodd);
+return 0;
+}
