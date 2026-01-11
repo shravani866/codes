@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main() {
+int N;
+scanf("%d",&N);
+int arr;
+for(int i=0 ;i<N;i++) {
+scanf("%d",&arr[i]);
+}
+int min=101, max=-1;
+for(int i=0;i<N;i++) {
+int count=0;
+for(int j=0;j<N;j++) {
+if(arr[j]==arr[i]) count++;
+}
+if(count==arr[i]) {
+if(arr[i]<min) min=arr[i];
+if(arr[i]>max) max=arr[i];
+}
+}
+if(max==-1) {
+printf("-1\n");
+} else {
+printf("%d %d\n",min, max);
+}
+return 0;
+}
