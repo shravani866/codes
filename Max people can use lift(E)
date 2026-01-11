@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<stdlib.h>
+int compare(const void*a, const void*b) {
+return (*(int *)a-*(int *)b);
+}
+int main() {
+int maxp,maxw, N;
+scanf("%d %d",&maxp,&maxw);
+scanf("%d",&N);
+int weights;
+for(int i=0 ;i<N;i++) {
+scanf("%d",&weights[i]);
+}
+qsort(weights, N, sizeof(int), compare);
+int count=0;
+int totalWeight=0;
+for(int i=0 ;i<N;i++) {
+if(count<maxp && totalWeight +weights[i]<=maxw) {
+totalWeight+=weights[i];
+count++;
+} else {
+break;
+}
+}
+printf("%d",count);
+return 0;
+}
