@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main() {
+int N;
+scanf("%d", &N);
+int arr;
+for(int i=0;i<N;i++) {
+scanf("%d",&arr[i]);
+}
+int found=0;
+for(int i=0 i<N;i++) {
+int count=0;
+for(int j=0;j<N;j++) {
+if(arr[j]==arr[i]) {
+count++;
+}
+}
+if(count==arr[i]) {
+int duplicate=0;
+for(int k=0 ;k<i;k++) {
+if(arr[k]==arr[i]) {
+duplicate=1;
+break;
+}
+}
+if(!duplicate) {
+printf("%d ",arr[i]);
+found=1;
+}
+}
+}
+If(!found) {
+Printf("-1");
+}
+printf(" ");
+return 0;
+}
