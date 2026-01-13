@@ -1,0 +1,28 @@
+#include<stdio.h>
+int findInsertPosition(int arr[], int n, int target) {
+int low=0,high=n-1,mid;
+while(low<=high) {
+mid=(low+high)/2;
+if(arr[mid]==target)
+return mid;
+else if(arr[mid]<target)
+low=mid+1;
+else
+high=mid-1;
+}
+return low;
+}
+int main() {
+int Q;
+scanf("%d",&Q);
+while(Q--) {
+int N,T;
+scanf("%d %d", &N, &T);
+int arr;
+for(int i=0 ;i<N;i++)
+scanf("%d",&arr[i]);
+int pos=findInsertPosition(arr,N,T);
+printf("%d",pos);
+}
+return 0;
+}
